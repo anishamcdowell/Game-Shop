@@ -1,0 +1,23 @@
+@mixin flex-row-wrap {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin flex-row-nowrap {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+@mixin flex-column-wrap {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@mixin flex-coluumn-nowrap {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+}
