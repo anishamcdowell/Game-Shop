@@ -1,23 +1,35 @@
-import React from 'react';
+import React from "react";
+import "../../../assets/css/styles.css";
 
 const Navbar = () => {
-    return (
-        <>
-        <nav id="main-nav">
-      <div id="nav-branding"><p id="nav-branding-p">Nocturnal Games</p></div>
-      <ul id="nav-ul">
-        <li class="nav-li">
-          <a href="" id="av-li-a">About Us</a>
-          <a href="" id="av-li-a">Shop</a>
-          <a href="" id="av-li-a">Event Calendar</a>
-          <a href="" id="av-li-a">Contact Us</a>
-        </li>
-      </ul>
-      <button class="btn">LOGIN</button>
-    </nav>
-    <div className="nav-bg"></div>
-    </>
-    )
-}
+  const linkArr = ['About Us', 'Shop', 'Events Calendar', 'Contact Us'];
 
-export default Navbar
+  return (
+    <>
+      <nav id="main-nav">
+        <div id="branding-col">
+          <a id="nav-branding-a" href="/">Nocturnal Games</a>
+        </div>
+        <div id="links-col">
+        <ul>
+          {linkArr.map((link) => {
+            return (
+            <li className="nav-li">
+            <a href="" className="nav-li-a">
+              {link}
+            </a>
+          </li>
+            )
+          })}
+        </ul>
+        </div>
+        <div id="btn-col">
+        <button className="nav-btn">LOGIN</button>
+        </div>
+      </nav>
+      <div className="nav-bg"></div>
+    </>
+  );
+};
+
+export default Navbar;

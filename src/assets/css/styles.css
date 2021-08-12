@@ -1,0 +1,102 @@
+/* BUTTON MIXINS */
+/* FULL OPACITY PALETTE */
+/* HALF OPACITY PALETTE */
+/* SPACING */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #15151b;
+}
+
+.nav-btn {
+  all: unset;
+  border-radius: 50rem;
+  padding: .5rem 1.5rem;
+  background: none;
+  color: #fff;
+  border: 2px #fff solid;
+  margin: 0 1rem;
+}
+
+#main-nav {
+  background: #34ace0;
+  background: -webkit-gradient(linear, left top, right top, from(#34ace0), to(#33d9b2));
+  background: linear-gradient(to right, #34ace0 0%, #33d9b2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+  box-shadow: 0 1rem 10rem 3rem rgba(112, 111, 211, 0.5);
+  -webkit-box-shadow: 0 1rem 10rem 3rem rgba(112, 111, 211, 0.5);
+  -moz-box-shadow: 0 1rem 10rem 3rem rgba(112, 111, 211, 0.5);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: .5rem 2rem;
+  font-family: Arial;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 1rem;
+}
+
+#main-nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+#main-nav #branding-col {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #fff;
+  letter-spacing: .25rem;
+}
+
+#nav-branding-a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav-branding-a:hover {
+  color: #474787;
+  cursor: pointer;
+}
+
+#links-col ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#links-col ul li {
+  margin: 0 2rem;
+  text-align: center;
+}
+
+#links-col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#links-col ul li a:hover {
+  -webkit-text-decoration: underline #474787 1.5px;
+          text-decoration: underline #474787 1.5px;
+  text-underline-offset: .5rem;
+}
+
+.nav-btn:hover {
+  background: #474787;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

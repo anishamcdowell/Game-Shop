@@ -1,0 +1,53 @@
+#main-nav {
+    @include gradient($lightblue, $lightgreen, horizontal);
+    @include boxshadow(0, 1rem, 10rem, 3rem, $halflightpurple);
+    width: 100%;
+    height: fit-content;
+    padding: .5rem 2rem;
+    font-family: $displayfont;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 1rem;
+    > div {
+        @include flexbox;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    #branding-col {
+        font-weight: bold;
+        font-size: 1.05rem;
+        color: #fff;
+        letter-spacing: .25rem;
+    }
+}
+
+#nav-branding-a {
+    @include link;
+    color: #fff;
+}
+#nav-branding-a:hover {
+    color: $midpurple;
+    cursor: pointer;
+}
+
+#links-col ul {
+    @include flexbox;
+    list-style: none;
+    li {
+        margin: $linkmargin;
+        text-align: center;
+        a {
+            @include link;
+            color: #fff;
+        }
+        a:hover {
+            text-decoration: underline $midpurple 1.5px;
+            text-underline-offset: .5rem;
+        }
+    }
+}
+
+.nav-btn:hover {
+    @include btn-hover($midpurple, #fff);
+}
